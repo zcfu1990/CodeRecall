@@ -1,0 +1,60 @@
+/* 黑名单Card */
+.blacklist-card {
+	margin: 10px 0 10px;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+	border: none;
+	border-radius: 3px;
+}
+
+.blacklist-card:before, .modal-card:after{
+	content: "";
+	display: block;
+	padding-top: 25%; 	/* initial ratio of 1:1*/
+}
+.nopaddingbefore:before {
+	padding-top: 0 !important;
+}
+
+.version-card:before {
+	padding-top: 0 !important;
+}
+.version-card:after{
+	content: "";
+	display: block;
+	padding-top: 15%; 	/* initial ratio of 1:1*/
+}
+
+.blacklist-card .card-body {
+	text-align: center;
+	color: rgba(255,255,255,1);
+}
+
+.blacklist-card [data-target="image"]{
+	width: 60px;
+	height: 60px;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 50%;
+}
+
+.blacklist-card [data-target="name"]{
+	margin-top: 5px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.blacklist-card [data-target="btns"]{
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.blacklist-card [data-target="btns"] a {
+	color: rgba(255,255,255,1);
+	cursor: pointer;
+}
+
+.blacklist-card [data-target="btns"] a i, .blacklist-card [data-target="btns"] a span {
+	vertical-align: middle;
+}
+/* 黑名单Card */

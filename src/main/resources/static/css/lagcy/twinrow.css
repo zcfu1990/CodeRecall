@@ -1,0 +1,70 @@
+/* 创建新卡片 */
+.create-card {
+	margin: 10px 0 10px;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.create-card:before, .create-card:after{
+	content: "";
+	display: block;
+	padding-top: 25%; 	/* initial ratio of 1:1*/
+}
+
+.create-card .card-body {
+	text-align: center;
+	color: rgba(255,255,255,0.8);
+}
+
+.create-card .card-body i{
+	font-size: 60px;
+}
+/* ！创建新卡片 */
+
+/* 多功能卡 category 、tag、title */
+.multi-card {
+	margin: 10px 0 10px;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.multi-card:before, .multi-card:after{
+	content: "";
+	display: block;
+	padding-top: 25%; 	/* initial ratio of 1:1*/
+}
+
+.multi-card .card-body {
+	text-align: center;
+	color: rgba(255,255,255,0.8);
+}
+
+/* 
+	保持和content-default 一致 
+	to do list:
+	1. what if content-default is not 85px;
+*/
+.multi-card:hover .card-body .content-hover {
+	min-height: 85px; 
+}
+
+.multi-card .card-body i{
+	font-size: 60px;
+}
+
+
+.multi-card .card-body .content-hover {
+	display: none;
+}
+
+.multi-card:hover .card-body .content-hover {
+	display : block;
+}
+.multi-card:hover .card-body .content-default {
+	display : none;
+}
+/* ！多功能卡 category 、tag、title */

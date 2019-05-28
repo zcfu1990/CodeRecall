@@ -1,0 +1,402 @@
+@charset "UTF-8";
+
+
+.modal-open {
+    padding-right: 0px !important;
+}
+
+.modal.fade .modal-dialog {
+   -webkit-transform: translate(0);
+   -moz-transform: translate(0);
+   transform: translate(0);
+}
+
+.modal>img
+{
+	max-width:100%;
+}
+
+.mybox {
+	min-height: 50px;
+}
+
+.my-info-box-time {
+	color: #b1abab;
+	font-size: 14px;
+}
+
+.dropdown-submenu {
+	position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+	top: 0;
+	left: 100%;
+	margin-top: -1px;
+}
+
+/* switch */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 52px;
+	height: 26px;
+}
+
+.switch input {
+	display: none;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 18px;
+	width: 18px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked+.slider {
+	background-color: #2196F3;
+}
+
+input:focus+.slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+/* !switch */
+
+/* é�’æ¶˜ç¼“é�‚æ�¿å´±é�—ï¿½ */
+.create-card {
+	margin: 10px 0 10px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.create-card:before, .create-card:after {
+	content: "";
+	display: block;
+	padding-top: 25%; /* initial ratio of 1:1*/
+}
+
+.create-card .card-body {
+	text-align: center;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.create-card .card-body i {
+	font-size: 60px;
+}
+/* é”›ä½¸åž±å¯¤çƒ˜æŸŠé�—ï¼„å¢– */
+
+/* æ¾¶æ°¬å§›é‘³è—‰å´± category éŠ†ä¹¼agéŠ†ä¹¼itle */
+.multi-card {
+	margin: 10px 0 10px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.multi-card:before, .multi-card:after {
+	content: "";
+	display: block;
+	padding-top: 25%; /* initial ratio of 1:1*/
+}
+
+.multi-card .card-body {
+	text-align: center;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+/* 
+	æ·‡æ¿‡å¯”é�œå®‘ontent-default æ¶“ï¿½é‘·ï¿½ 
+	to do list:
+	1. what if content-default is not 85px;
+*/
+.multi-card:hover .card-body .content-hover {
+	min-height: 85px;
+}
+
+.multi-card .card-body i {
+	font-size: 60px;
+}
+
+.multi-card .card-body .content-hover {
+	display: none;
+}
+
+.multi-card:hover .card-body .content-hover {
+	display: block;
+}
+
+.multi-card:hover .card-body .content-default {
+	display: none;
+}
+
+.list-item-twin-row {
+	border: none;
+}
+
+.list-item-twin-row:hover {
+	cursor: pointer;
+}
+
+.twin_row_item_name {
+	position: relative;
+	top: 5px;
+	margin-left: 10px;
+}
+
+.user_role_name_css {
+	font-size: 13px;
+	position: relative;
+	top: 3px;
+}
+
+.nav-pills .myactive {
+	color: red;
+}
+
+.pointer-cursor:hover {
+	cursor: pointer;
+}
+
+.ul_li_class {
+	border-bottom: 1px solid gray;
+	margin-bottom: 5px;
+	padding-left: 5px;
+}
+
+.shopping-item .widget-title img {
+	width: 50px;
+}
+
+.shopping-item .box-footer {
+	padding: 0;
+}
+
+.shopping-item .box-footer p:nth-child(1) {
+	line-height: 1.3;
+	font-weight: 700;
+	font-size: 16px;
+	min-height: 33px;
+	padding-top: 5px;
+	overflow: hidden;
+	height: 1.5em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-left: 5px;
+}
+
+.shopping-item .box-footer p:nth-child(2) {
+	margin-left: 5px;
+	color: #33cc33;
+}
+
+.shopping-item .box-footer p:nth-child(3) {
+	font-weight: 700;
+	padding-left: 15px;
+}
+
+.widget-title {
+	display: none;
+}
+
+.box-widget:hover .widget-title {
+	display: block;
+}
+
+.shopping-item .box-footer {
+	color: white;
+	border-top: none;
+}
+
+.my_project_header_name {
+	color: black;
+	font-size: 18px;
+}
+
+.dropdown-toggle::after {
+	display: none;
+}
+
+.nav-user-li {
+	margin-right: 10px;
+}
+
+.renderjson a {
+	text-decoration: none;
+}
+
+.renderjson .disclosure {
+	color: crimson;
+	font-size: 150%;
+}
+
+.renderjson .syntax {
+	color: grey;
+}
+
+.renderjson .string {
+	color: darkred;
+}
+
+.renderjson .number {
+	color: darkcyan;
+}
+
+.renderjson .boolean {
+	color: blueviolet;
+}
+
+.renderjson .key {
+	color: darkblue;
+}
+
+.renderjson .keyword {
+	color: blue;
+}
+
+.renderjson .object.syntax {
+	color: lightseagreen;
+}
+
+.renderjson .array.syntax {
+	color: orange;
+}
+
+.self-name
+{
+    word-wrap: break-word;
+    white-space: nowrap;
+    max-width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 80%;
+    text-overflow: ellipsis;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.user-header-icon
+{
+	font-size:20px;
+	margin-top:5px;
+}
+
+
+@media screen and (max-width: 650px) {
+  .top_show_icon_text {
+    display: none;
+  }
+}
+
+.switch-rightbot {
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    z-index: 100;
+}
+
+.btn-rightbot {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 20px;
+    line-height: 1.33;
+    border-radius: 25px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.comment-content>img
+{
+   max-width:100%;
+}
+
+.myactive
+{
+	color:red;
+}
+
+.my-abs-name
+{
+    word-wrap: break-word;
+    white-space: nowrap;
+    max-width:75px;
+    text-overflow: ellipsis;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.post_title
+{
+	color: #6c757d;
+    word-wrap: break-word;
+    white-space: nowrap;
+    font-weight: bold;
+    min-width: 70%;
+    text-overflow: ellipsis;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.imgzoom img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.imgzoom:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.my_project_header_name
+{
+	color:white;
+}
+
+
+
+/*.search_input {
+  width: 170px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+*/
+/* When the input field gets focus, change its width to 100% 
+.search_input:focus {
+  width: 60%;
+}*/

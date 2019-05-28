@@ -1,0 +1,425 @@
+/* 
+全局： 
+	1. 加载置顶一级导航栏 - FirstNavTopController
+	2. 加载置顶二级导航栏 - SecondNavTopController
+	3. 加载左侧折叠式导航栏 - CollapseNavLeftController
+	4. 加载左下角按钮组件 - RightBotBtnController
+Group：
+	5. 左侧群组栏控件 - LeftModuleController
+	7. 修改群设置模态框组件 - UpdateGroupSettingController(groupID)
+ */
+
+/* 1. 置顶一级导航栏 - FirstNavTopController */
+.main-header .logo .logo-lg a{
+	color: rgba(255,255,255,1);
+	margin-right:10px; 
+}
+
+.main-header .current-page {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.main-header #navbar-collapse form {
+	margin: 5px auto 5px 15px;
+}
+
+.main-header #navbar-collapse form select{
+	height: 40px;
+	border-radius: 4px; 
+}
+
+@media only screen and (min-width: 992px) {
+	#navbar-collapse form select{
+		width: 300px;
+	}
+}
+@media only screen and (min-width: 1250px) {
+	#navbar-collapse form select{
+		width: 500px;
+	}
+}
+@media only screen and (min-width: 1500px) {
+	#navbar-collapse form select{
+		width: 700px;
+	}
+}
+
+.main-header .select2-selection--single {
+	height: 40px !important;
+	padding: 12px 24px 6px 12px !important;
+}
+.main-header .select2-container--bootstrap .select2-results > .select2-results__options {
+	max-height: 500px !important;
+}
+
+
+
+.navbar-custom-menu .search-menu .dropdown-menu{
+	padding-top: 60px;
+}
+
+.navbar-custom-menu .search-menu .dropdown-menu li{
+	margin: 5px;
+}
+
+.navbar-custom-menu .search-menu .dropdown-menu li input{
+	border-radius: 4px;
+}
+
+@media only screen and (min-width: 1050px) {
+	.navbar-custom-menu .search-menu a {
+		visibility: hidden;
+	}
+}
+/* ！置顶一级导航栏 - FirstNavTopController */
+
+/* 2. 置顶二级导航栏 - SecondNavTopController */
+.nav-top-second {
+	margin-left: 0px !important;
+}
+.nav-top-second .container {
+	text-align: center;
+}
+.nav-top-second .container ul:first-child{
+	display: inline-block;
+	float: none;
+}
+.nav-top-second .container ul:first-child < li{
+	margin-right:10px;
+}
+/* ！置顶二级导航栏 - SecondNavTopController */
+
+/* 3. 左侧折叠式导航栏 - CollapseNavLeftController */
+.sidebar-collapse {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height:100%;
+	width: 300px;
+	padding-top: 0;
+	display: none;
+	background-color: #fff;
+	z-index: 10000;
+	-webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2); 
+}
+
+.sidebar-collapse .brand {
+	padding: 5px 16px;
+	margin-bottom: 15px;
+	line-height: 50px;
+	border-bottom: 1px solid #ddd;
+}
+
+.sidebar-collapse .brand .title {
+	margin-right:10px;
+	color: #757575;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.sidebar-collapse .brand .btn-hide {
+	padding-top:10px;
+	color: #757575;
+	font-weight: 600;
+}
+.sidebar-collapse .brand .btn-hide i{
+	font-size: 32px;
+}
+
+
+.sidebar-collapse .sidebar-menu .item a {
+	color: #757575;
+	border-left: 3px solid transparent;
+	font-weight: 600;
+	padding: 12px 5px 12px 15px;
+	display: block;
+}
+.sidebar-collapse .sidebar-menu .item a span {
+	padding-left:20px;
+}
+.sidebar-collapse .sidebar-menu .divider {
+	margin-top:10px;
+	margin-bottom:10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.sidebar-collapse .bottom {
+	position: absolute;
+	bottom: 15px;
+}
+
+.sidebar-collapse .bottom p{
+	margin: 7px 30px;
+	color: #aaa;
+	cursor: pointer;
+}
+
+.sidebar-collapse .bottom .underline {
+	color: #aaa;
+	text-decoration: underline;
+}
+/* ！左侧折叠式导航栏 - CollapseNavLeftController */
+
+/* 4. 左下角按钮组件 - RightBotBtnController */		
+.btn-rightbot{
+	width: 50px;
+	height: 50px;
+	padding: 10px 16px;
+	
+	font-size: 20px;
+	line-height: 1.33;
+	border-radius: 25px;
+	box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+}
+
+.switch-rightbot{
+	position: fixed;
+	bottom: 80px;
+	right: 80px;
+	z-index: 100;
+}
+
+.block-rightbot{
+	position: fixed;
+	bottom: 140px;
+	right: 80px;
+	z-index: 100;
+	display: none;	
+	//border: 1px solid black;
+}
+
+.block-rightbot > div{
+	text-align: right;
+	margin-bottom: 15px;
+}
+
+.block-rightbot > div > span{
+	padding:3px;
+	margin-right: 10px;
+	background: rgba(105,105,105,1);
+	color: rgba(255,255,255,0.8);
+	border-radius: 3px;
+	box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+}
+.block-rightbot .btn-rightbot:hover {
+	width: 60px;
+	height: 60px;
+	padding: 15px 22px;
+	border-radius: 30px;	
+}
+/* ！左下角按钮组件 - RightBotBtnController */
+
+/* 5. 左侧群组栏控件 - LeftModuleController */
+.block-left {
+	position: absolute;
+	width:360px;
+	height: calc(100% - 100px);
+	background-color: #fff;
+	z-index: 900;
+	box-shadow: 0 0 4px 0 rgba(0,0,0,0.14);
+}
+
+.block-left .menu-top {
+	position: absolute;
+	padding: 15px;
+	width: 100%;
+}
+
+.block-left .menu-top .dropdown-menu {
+	border-radius: 2px;
+	box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+}
+
+.block-left .img-background img {
+	width:360px;
+	height: 200px;
+}
+
+.block-left .main-content{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.block-left .main-content .img-block {
+	position: relative;
+	margin-top: -25px;
+	margin-bottom: -4px;
+	width: 100%;
+}
+
+.block-left .main-content .img-block img{
+	top:-5px;
+	width: 32px;
+	height: 32px;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.block-left .main-content .sign-block{
+	margin-top: 8px;
+	margin-bottom: 42px;
+}
+
+.block-left .main-content .sign-block span{
+	color: rgba(0,0,0,0.54);
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.block-left .main-content .name {
+	color: rgba(0,0,0,0.87);
+	font-size: 34px;
+	font-weight: 500;
+	line-height: 40px;
+	margin-bottom: -6px;
+	overflow: hidden;
+}
+
+.block-left .main-content .detail {
+	margin-top: 30px;
+}
+
+.block-left .main-content .detail > span {
+	font-weight: 700;color: #777;
+}
+
+.block-left .main-content .detail > p {
+	margin: 0 0 10px;
+}
+
+.block-left .main-content .search-block {
+	margin-left: -25px; 
+	margin-right: -25px; 
+	margin-top: 30px;
+	padding-top: 8px;
+	padding-left: 30px;
+	height: 50px;
+	font-size: 20px; 
+	border-top: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(0,0,0,0.1); 
+	color: rgba(0,0,0,0.54);
+}
+
+.block-left .main-content .search-block input {
+	border: none;
+}
+.block-left .main-content .search-block input:focus {
+	outline: none;
+}
+/* ！左侧群组栏控件 - LeftModuleController */
+
+
+/* 7. 修改群设置模态框组件 - UpdateGroupSettingController(groupID) */
+#modal-group-edit .modal-body {
+	padding:0;
+}
+
+#modal-group-edit .modal-body .menu-top {
+	position: absolute;
+	width: 100%;
+	padding: 10px;
+}
+
+#modal-group-edit .modal-body .menu-top span:nth-child(1) {
+	font-size: 35px;
+	color: #fff;
+	opacity: 1;
+}
+
+#modal-group-edit .modal-body .menu-top span:nth-child(2) {
+	margin-left: 15px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 38px;
+	color: #fff;
+}
+
+#modal-group-edit .modal-body .menu-top span:nth-child(3) {
+	margin-left: 15px;
+	font-size: 18px;
+	line-height: 38px;
+	color: #fff;
+	cursor: pointer;
+}
+
+#modal-group-edit .modal-body .background-img img {
+	width:100%;
+	height: 300px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+#modal-group-edit .modal-body .background-edit {
+	margin-top: -60px;
+	position: relative;
+	width: 100%;
+}
+
+#modal-group-edit .modal-body .background-edit a {
+	height:40px;
+	width:40px;
+	margin-right: 15px;
+	padding: 10px;
+	font-size:18px;
+	background-color:rgba(238,238,238,0.8);
+	border-radius: 50%;
+	color:#757575;
+	cursor:pointer;
+}
+
+#modal-group-edit .modal-body .img-edit {
+	margin-top: -14px;
+	margin-left: 40px; 
+	position: relative;
+	width: 100%;
+}
+
+#modal-group-edit .modal-body .img-edit img {
+	width: 60px;
+	height: 60px;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+}
+
+#modal-group-edit .modal-body .img-edit img:hover {
+	content: url('../dist/img/icon-camera-128.png');
+	background-color:rgba(238,238,238,0.8); 
+}
+
+#modal-group-edit .modal-body .main-content {
+	padding: 15px;
+}
+
+#modal-group-edit .modal-body .main-content .form-group p {
+	margin:0;
+	font-size: 12px;
+	font-weight: 600;
+	color: rgba(0,0,0,0.54);
+}
+
+
+#modal-group-edit .modal-body .main-content .form-group .form-control {
+	border-top:none;
+	border-left:none;
+	border-right:none;
+}
+
+#modal-group-edit .modal-body .main-content .row {
+	margin-top: 30px;
+}
+
+#modal-group-edit .modal-body .main-content .row .menu-label {
+	padding-left: 30px;
+}
+
+#modal-group-edit .modal-body .main-content .form-group {
+	margin-top: 30px;
+}
+/* ！修改群设置模态框组件 - UpdateGroupSettingController(groupID) */
+
+

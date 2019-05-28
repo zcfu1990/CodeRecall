@@ -1,0 +1,9 @@
+.wysiwyg-editor .editor{
+	border: 1px solid rgba(0,0,0,.3);
+	min-height: 200px;
+	padding: 10px;
+}
+
+.wysiwyg-editor img{
+	max-width: 100%;
+}
